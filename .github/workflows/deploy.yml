@@ -59,7 +59,7 @@ jobs:
           application_name: ${{ secrets.AWS_APP_NAME }}
           environment_name: ${{ secrets.AWS_ENV_NAME }}
           version_label: ${{ github.sha }}
-          region: us-east-1
+          region: ap-south-1
           deployment_package: deploy-${{ github.sha }}.zip
           existing_bucket_name: ${{ secrets.AWS_BUCKET_NAME }}
           use_existing_version_if_available: false
